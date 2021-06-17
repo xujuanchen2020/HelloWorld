@@ -1,0 +1,640 @@
+/****************** topnav ******************/
+
+.topnav {
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.topnav .topnav-containers {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  flex: 1 1 50%;
+}
+
+.topnav #topnav-logo {
+  justify-content: left;
+  align-items: center;
+  /* can be changed later */
+  /* max-width: 350px; */
+}
+
+.topnav #topnav-a-href {
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+
+.topnav #responsive-toggle-down {
+  display: none;
+}
+
+.topnav .topnav-containers a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  float: right;
+  text-align: center;
+  padding: 2% 16px;
+  text-decoration: none;
+  /* padding-top: 4%; */
+
+  color: #958A83;
+  /* display: block; */
+  /* flex: 1 6 100px; */
+}
+
+.topnav .topnav-containers a.bar-icon {
+  display: none;
+}
+
+.topnav .topnav-containers img {
+  width: 170px;
+  height: 58px;
+  margin-left: 5%;
+  margin-top: 1px;
+
+  background: transparent;
+}
+
+.topnav #responsive-toggle-down {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .topnav {
+    margin: 0;
+    padding: 0;
+  } 
+}
+
+/* shows the icon when the window is shrunk */
+@media screen and (max-width: 599px) {
+  .topnav .topnav-containers a.bar-icon {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  .topnav .topnav-containers a {
+    display: none;
+  }  
+}
+
+/* shows the navbar in drop down after clicking the dropdown icon */
+@media screen and (max-width: 599px) {
+    .topnav.responsive {
+      height: 160px;
+    } 
+    .topnav.responsive #responsive-toggle-down {
+      display: block;
+      padding-top: 1%;
+    }
+    .topnav.responsive #responsive-toggle-down a {
+      display: block;
+      float: left;
+    } 
+}
+
+@media screen and (max-width: 339px) {
+  /* .topnav {
+
+  }
+  
+  .topnav .topnav-containers {
+    
+  }
+   */
+  .topnav #topnav-logo {
+    width: 50%;
+  }
+/*   
+  .topnav #topnav-a-href {
+    
+  }
+  
+  .topnav #responsive-toggle-down {
+    
+  }
+  
+  .topnav .topnav-containers a {
+    
+  }
+  
+  .topnav .topnav-containers a.bar-icon {
+    
+  }
+  
+  .topnav .topnav-containers img {
+    
+  }
+  
+  .topnav #responsive-toggle-down {
+    
+  } */
+
+}
+/****************** signup ******************/
+
+.signup-box {
+  --bs-gutter-x: 14%;
+  --bs-gutter-y: 0;
+  width: 100%;
+  background: #FEF9EE;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-content: center;
+}
+
+.signup-box .signup-box-containers {
+  flex-basis: 50%;
+}
+
+.signup-box #signup-box-content {
+  padding-left: calc(var(--bs-gutter-x) / 2);
+}
+
+.signup-box h1 {
+  /* margin-left: 7%; */
+  /* margin-right: 54.19%; */
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 258%;
+
+  color: #372e2c;
+}
+
+.signup-box p {
+  /* margin-left: 7%; */
+  /* margin-right: 45%; */
+  margin-top: 1%;
+  width: 45%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 115%;
+
+  color: #372e2c;
+}
+
+.signup-box a {
+  display: block;
+  width: 265px;
+  height: 40px;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 140%;
+  line-height: 39px;
+
+  background: #FFAE66;
+  border-radius: 30px;
+  color: #372e2c;
+}
+
+.signup-box img {
+  width: 642px;
+  height: 400px;
+  /* margin-left: 45%;
+  margin-top: -20%; */
+}
+
+/* 1399 or 1400 */
+@media screen and (max-width: 1400px) {
+    .signup-box #signup-box-content {
+      padding-left: calc(var(--bs-gutter-x) / 1.5);
+    }
+    
+    .signup-box img {
+      width: 550px;
+      height: 350px;
+    }
+}
+
+/* 1199 or 1200 */
+@media screen and (max-width: 1200px) {
+    .signup-box img {
+      width: 450px;
+      height: 300px;
+    }
+}
+
+/* 990 to 992 */
+@media screen and (max-width: 992px) {
+    .signup-box img {
+      width: 350px;
+      height: 250px;
+    }
+}
+
+/* 767 to 770, picture decreasing in size synchronously with the change in monitor width */
+@media screen and (max-width: 780px) {
+    .signup-box {
+      padding-left: 7%;
+      padding-right: 7%;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .signup-box img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .signup-box #signup-box-content {
+      padding-left: 0%;
+    }
+
+    .signup-box #signup-box-img {
+      margin-bottom: 2%;
+    }
+
+    .signup-box p {
+      width: 100%;
+
+      text-align: center;
+    }
+
+    .signup-box h1 {
+      text-align: center;
+    }
+
+    .signup-box a {
+      width: 99%;
+    }
+}
+
+/****************** info ******************/
+.info {
+  padding-bottom: 100px;
+}
+
+.info .info-container-odd-nth {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info .info-container-even-nth {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* ****************** odd-nth element in info ****************** */
+/* 1: starting, 3: thriving */
+
+.info .info-container-odd-nth .starting-container{
+  /* width: ;
+  height: ; */
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* .info .info-container-odd-nth #starting-content{
+  
+} */
+
+.info .info-container-odd-nth #starting-content #starting{
+  display: block;
+  width: 100%;
+  height: 74px;
+
+  background: rgba(255, 174, 102, 0.5);
+  border-radius: 0px 30px 30px 0px;
+}
+
+.info .info-container-odd-nth #starting-content #starting h1 {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.info .info-container-odd-nth #starting-content h2 {
+  margin-left: 109px;
+  margin-bottom:0;
+  padding-left: 1px;
+}
+
+.info .info-container-odd-nth #starting-content p {
+  display: block;
+  padding-left: 1px;
+  margin-top: 0;
+  margin-left: 109px;
+  margin-bottom: 2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  width: 84%;
+
+  color: #958A83;
+}
+
+.info .info-container-odd-nth #starting-image{
+  padding-left: 9%;
+  padding-top: 3%;
+}
+
+.info .info-container-odd-nth #starting-image img {
+  display: block;
+  width: 500px;
+  height: 350px;
+}
+
+.info .info-container-odd-nth #starting-image #head-pic {
+  display: block;
+  width: 550px;
+  height: 400px;
+}
+/* ****************** even-nth element in info ****************** */
+/* 2: info */
+
+.info .info-container-even-nth {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.info .info-container-even-nth .driving-container {
+  /* width: ;
+  height: ; */
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+/* 
+.info .info-container-even-nth #driving-content {
+
+} */
+
+.info .info-container-even-nth #driving-content #driving {
+  display: block;
+  width: 100%;
+  height: 74px;
+
+  background: rgba(255, 174, 102, 0.5);
+  border-radius: 30px 0px 0px 30px;
+}
+
+.info .info-container-even-nth #driving-content #driving h1 {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.info .info-container-even-nth #driving-content h2 {
+  margin-left: 109px;
+  margin-bottom: 0;
+  padding-left: 1px;
+}
+
+.info .info-container-even-nth #driving-content p {
+  margin-top: 0;
+  margin-left: 109px;
+  margin-bottom: 2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 1px;
+  width: 84%;
+
+  color: #958A83;
+}
+
+.info .info-container-even-nth #driving-image {
+  padding-left: 6%;
+  padding-top: 3%;
+}
+
+.info .info-container-even-nth #driving-image img {
+  display: block;
+  width: 558px;
+  height: 300px;
+  margin-right: -100px;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+/* ****************** thriving ****************** */
+
+/* 1399 or 1400 */
+@media screen and (max-width: 1400px) {
+  .info .info-container-odd-nth #starting-content p {
+    width: 75%;
+  }
+  
+  .info .info-container-odd-nth #starting-image{
+    padding-left: 8%;
+    padding-top: 3%;
+  }
+  
+  .info .info-container-odd-nth #starting-image img {
+    display: block;
+    width: 450px;
+    height: 300px;
+  }
+
+  .info .info-container-odd-nth #starting-image #head-pic {
+    display: block;
+    width: 500px;
+    height: 350px;
+  }
+
+  .info .info-container-even-nth #driving-content p {
+    width: 75%;
+  }
+  
+  .info .info-container-even-nth #driving-image {
+    padding-top: 5%;
+    padding-left: 4%;
+  }
+  
+  .info .info-container-even-nth #driving-image img {
+    display: block;
+    width: 520px;
+    height: 270px;
+  }
+
+}
+
+/* 1199 or 1200 */
+@media screen and (max-width: 1200px) {
+  
+  .info .info-container-odd-nth #starting-content p {
+    width: 70%;
+  }
+  
+  .info .info-container-odd-nth #starting-image{
+    padding-left: 7%;
+    padding-top: 5%;
+  }
+  
+  .info .info-container-odd-nth #starting-image img {
+    display: block;
+    width: 400px;
+    height: 250px;
+  }
+
+  .info .info-container-odd-nth #starting-image #head-pic {
+    display: block;
+    width: 450px;
+    height: 300px;
+  }
+  
+  /* ****************** even-nth element in info ****************** */
+  /* 2: info */
+  .info .info-container-even-nth #driving-content p {
+    width: 70%;
+  }
+  
+  .info .info-container-even-nth #driving-image {
+    padding-top: 7%;
+    padding-left: 3%;
+  }
+  
+  .info .info-container-even-nth #driving-image img {
+    display: block;
+    width: 480px;
+    height: 230px;
+  }
+  
+}
+
+/* 990 to 992 */
+@media screen and (max-width: 992px) {
+  .info .info-container-odd-nth #starting-content p {
+    width: 66%;
+  }
+  
+  .info .info-container-odd-nth #starting-image{
+    padding-left: 2%;
+    padding-top: 8%;
+  }
+  
+  .info .info-container-odd-nth #starting-image img {
+    display: block;
+    width: 400px;
+    height: 250px;
+  }
+
+  .info .info-container-odd-nth #starting-image #head-pic {
+    display: block;
+    width: 450px;
+    height: 300px;
+  }
+  
+  /* ****************** even-nth element in info ****************** */
+  /* 2: info */
+  
+  .info .info-container-even-nth #driving-content p {
+    width: 70%;
+  }
+  
+  .info .info-container-even-nth #driving-image {
+    padding-top: 7%;
+    padding-left: 0%;
+  }
+  
+  .info .info-container-even-nth #driving-image img {
+    display: block;
+    width: 480px;
+    height: 230px;
+  }
+}
+
+/* 767 to 770, picture decreasing in size synchronously with the change in monitor width */
+@media screen and (max-width: 780px) {
+  /* starting */
+  .info .info-container-odd-nth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .info-container-even-nth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .info-container-odd-nth #starting-content h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .info .info-container-odd-nth #starting-content p {
+    width: 66%;
+    text-align: center;
+    margin-left: 17.34%;
+    /* margin-right: 0; */
+    /* padding-left: 0; */
+  }
+  
+  .info .info-container-odd-nth #starting-image{
+    padding-left: 0%;
+    padding-top: 0%;
+  }
+  
+  .info .info-container-odd-nth #starting-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .info .info-container-odd-nth #starting-image #head-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ****************** even-nth element in info ****************** */
+  /* 2: info */
+  .info .info-container-even-nth #driving-content h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .info .info-container-even-nth #driving-content p {
+    width: 66%;
+    text-align: center;
+    margin-left: 17.34%;
+    /* margin-bottom: 10px; */
+  }
+  
+  .info .info-container-even-nth #driving-image {
+    padding-top: 3%;
+    padding-left: 0%;
+  }
+  
+  .info .info-container-even-nth #driving-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

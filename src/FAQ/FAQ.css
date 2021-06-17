@@ -1,0 +1,89 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, sans-serif, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #372E2C;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+/*  logo  */
+.faq-logo {
+    margin: 2.5rem;
+}
+
+/* FAQ info section*/
+.faq-info {
+    width: 90vw;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    max-width: 1170px;
+}
+
+.faq-info h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* button container */
+.btn-container {
+    display: flex;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.job-btn {
+    background: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    outline-color: hsl(186, 100%, 94%);
+    border-radius: 6px;
+}
+
+.job-btn:hover {
+    color: black;
+    background-color: rgba(236, 234, 233, 0.5);
+    box-shadow: 0 2px rgba(236, 234, 233, 0.5);
+}
+
+.active-btn {
+    color: black;
+    background-color: rgba(236, 234, 233, 0.5);
+    box-shadow: 2px 2px 5px rgba(236, 234, 233, 0.5);
+}
+
+.faq-info-content {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 2rem;
+    align-items: top;
+    margin-bottom: 1.25rem;
+}
+
+
+

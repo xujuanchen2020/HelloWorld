@@ -1,0 +1,644 @@
+/****************** topnav ******************/
+
+.topnav {
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: #FEF9EE;
+}
+
+.topnav .topnav-containers {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  flex: 1 1 50%;
+}
+
+.topnav #topnav-logo {
+  justify-content: left;
+  align-items: center;
+}
+
+.topnav #topnav-a-href {
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+
+.topnav #responsive-toggle-down {
+  display: none;
+}
+
+.topnav .topnav-containers a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  float: right;
+  text-align: center;
+  padding: 2% 16px;
+  text-decoration: none;
+  color: #958A83;
+}
+
+.topnav .topnav-containers a.bar-icon {
+  display: none;
+}
+
+.topnav .topnav-containers img {
+  width: 170px;
+  height: 58px;
+  margin-left: 5%;
+  margin-top: 1px;
+  background: transparent;
+}
+
+.topnav #responsive-toggle-down {
+  display: none;
+}
+
+/****************** signup ******************/
+.signup-box {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.signup-box-content {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.signup-box h1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 258%;
+  color: #372e2c;
+}
+
+.signup-box p {
+  margin-top: 1%;
+  width: 70%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 140%;
+  color: #372e2c;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.signup-box a {
+  padding: 0rem 1.5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 125%;
+  line-height: 34px;
+  background: #FFAE66;
+  border-radius: 30px;
+  color: #FFFFFF;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box-image {
+  width: 510px;
+  height: 470px;
+  display: flex;
+  margin-right: 5%;
+}
+
+
+/***************** shippers box *****************/
+.shippers-box {
+  background: linear-gradient(rgba(55, 46, 44, 0.7), rgba(55, 46, 44, 0.7)),url('./../resources/shippersWeBringTogether.svg');
+  width: 85vw;
+  height: 85vh;
+  margin: 0 auto;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.shippers-box-containers{
+  padding: 5% 0 0 5%;
+  max-width: 488px;
+}
+
+.shippers-box-containers h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 30%;
+}
+
+.shippers-box-containers p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+}
+
+/**************** Brokers box *****************/
+
+.brokers-box {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.brokers-box-content {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.borkers-box h1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 258%;
+  color: #372e2c;
+}
+
+.brokers-box p {
+  margin-top: 1%;
+  width: 45%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 140%;
+  color: #372e2c;
+  width: 70%;;
+}
+
+.brokers-box-image{
+  width: 510px;
+  height: 470px;
+  display: flex;
+  margin-left: 5%;
+}
+
+
+/************* Two images box ****************/
+.two-images-box {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 10%;
+}
+
+.two-images-box p {
+  margin-top: 2%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 140%;
+  color: #372e2c;
+}
+
+.two-images-box a {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 125%;
+  line-height: 34px;
+  background: #FFAE66;
+  border-radius: 30px;
+  color: #FFFFFF;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/****************** footer ********************/
+footer {
+  background-color: #372e2c;
+}
+
+.footer-container {
+  margin: 1%;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+}
+
+.footer-container h3 {
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: 0.03em;
+}
+
+.footer-container p {
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 24px;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-1 {
+  max-width: 604px;
+  padding: 3% 5%;
+}
+
+.col-2 {
+  padding: 3% 0 2% 6%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120%;
+    line-height: 28px;
+}
+
+.col-2 h3 {
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: 0.03em;
+}
+
+.bottom-row {
+  padding: 1% 5% 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.small-size-p{
+  font-size: small;
+}
+
+.icon-link {
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+  box-sizing: content-box;
+  border-radius: 8px;
+}
+.icon-link.fill.facebook {
+  background-color: #3b5998;
+}
+.icon-link.fill.facebook:hover {
+  background-color: #fff;
+}
+.icon-link.fill.facebook:hover .fa-facebook {
+  color: #3b5998;
+  transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.linkedin {
+  background-color: #007bb6;
+}
+.icon-link.fill.linkedin:hover {
+  background-color: #fff;
+}
+.icon-link.fill.linkedin:hover .fa-linkedin {
+  color: #007bb6;
+  transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.instagram {
+  text-align: center;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.icon-link.fill.instagram:hover {
+  background-color: #fff;
+}
+.icon-link.fill.instagram:hover .fa-instagram {
+  color: #d6249f;
+  transition: color 150ms ease-in-out;
+}
+
+.icon-link .fa {
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.icon-link .fab {
+  color: #fff;
+  line-height: 30px;
+  font-size: 28px;
+}
+
+hr{
+  color: #FEF9EE;
+  margin: 0 64px;
+}
+
+.copyright{
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FEF9EE;
+}
+
+
+
+
+
+/**************** responsive setting ***************/
+/**************** responsive setting ***************/
+
+/* 1399 or 1400 */
+@media screen and (max-width: 1400px) {
+    .signup-box-image {
+      width: 459px;
+      height: 423px;
+      display: flex;
+      margin-right: 5%;
+    }
+    .brokers-box-image {
+      width: 455px;
+      height: 423px;
+      display: flex;
+      margin-right: 5%;
+    }
+
+    .two-images-box-content img {
+      width: 435px;
+      height: 342px;
+    }
+}
+
+/* 1199 or 1200 */
+@media screen and (max-width: 1200px) {
+    .topnav {
+      margin: 0;
+      padding: 0;
+    } 
+    .signup-box-image {
+      width: 408px;
+      height: 376px;
+    }
+    .brokers-box-image {
+      width: 404px;
+      height: 376px;
+    }
+    .brokers-box-content {
+      margin-left: 15%;
+    }
+
+    .two-images-box-content img {
+      width: 387px;
+      height: 304px;
+    }
+}
+
+/* 990 to 992 */
+@media screen and (max-width: 992px) {
+    .signup-box img {
+      width: 357px;
+      height: 329px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .brokers-box-image {
+      width: 354px;
+      height: 329px;
+    }
+
+    .two-images-box-content img {
+      width: 339px;
+      height: 266px;
+    }
+}
+
+/* 767 to 770, picture decreasing in size synchronously with the change in monitor width */
+@media screen and (max-width: 780px) {
+    .signup-box {
+      padding-left: 7%;
+      padding-right: 7%;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .signup-box-image {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2%;
+    }
+
+    .signup-box-content {
+      padding-left: 0%;
+    }
+
+    .signup-box p {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .signup-box h1 {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .signup-box a {
+      width: 99%;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .shippers-box {
+      width: 100%;
+      height: 100%;
+      margin: 2%;
+    }
+
+    .shippers-box-containers h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 47px;
+      margin-bottom: 10%;
+    }
+
+    .shippers-box-containers p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.03em;
+      padding-bottom: 10%;
+    }
+
+    .brokers-box {
+      padding-left: 7%;
+      padding-right: 7%;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .brokers-box-image {
+      width: 100%;
+      height: 100%;
+      margin-left: 1%;
+    }
+
+    .brokers-box p {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .brokers-box h1 {
+      margin: 0%;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .two-images-box {
+      padding-left: 7%;
+      padding-right: 7%;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .two-images-box a{
+      margin-bottom: 2%;
+    }
+    .two-images-box-content img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer-container h3{
+      font-size: 16px;
+    }
+    .footer-container p {
+      font-size: 12px;
+    }
+
+    .col-1 {
+      max-width: 300px;
+      margin-right: 0;
+    }
+
+    .col-2 {
+      margin-left: 0;
+    }
+    
+    .col-2 h3 {
+      font-size: 16px;
+    }
+    .col-2 a {
+      font-size: 12px
+    }
+}
+
+/* shows the icon when the window is shrunk */
+@media screen and (max-width: 599px) {
+  .topnav .topnav-containers a.bar-icon {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  .topnav .topnav-containers a {
+    display: none;
+  }  
+}
+
+/* shows the navbar in drop down after clicking the dropdown icon */
+@media screen and (max-width: 599px) {
+    .topnav.responsive {
+      height: 160px;
+    } 
+    .topnav.responsive #responsive-toggle-down {
+      display: block;
+      padding-top: 1%;
+    }
+    .topnav.responsive #responsive-toggle-down a {
+      display: block;
+      float: left;
+    } 
+}
+
+@media screen and (max-width: 339px) {
+  .topnav #topnav-logo {
+    width: 50%;
+  }
+
+}
