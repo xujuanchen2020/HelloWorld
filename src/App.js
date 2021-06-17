@@ -1,46 +1,33 @@
 import './App.css'
-import React, {useState, useEffect} from 'react'
-import Loading from './Components/Loading'
-import Tours from './Components/Tours'
+import React, { useState, useEffect } from 'react'
+import Modal from './popup/Modal'
 
-const url='https://course-api.com/react-tours-project'
+const BUTTON_WRAPPER_STYLES = {
+  position: 'relative',
+  zIndex: 1,
+}
+
+const OTHER_CONTENT_STYLES = {
+  position: 'relative',
+  zIndex: 2,
+  backgroundColor: 'red',
+  padding: '10px',
+}
 
 function App() {
-  const [tours, setTours] = useState([])
-  const [loading, setLoading] = useState(true)
-
-  const fetchTours = async() => {
-    setLoading(true)
-    try {
-      const response = await fetch(url)
-      const tours = await response.json()
-      setLoading(false)
-      setTours(tours)
-    } catch (error) {
-      setLoading(false)
-      console.log(error)
-    }
-  }
-
-  useEffect(() => {
-    fetchTours();
-  }, [])
-
-  if (loading) {
-    return (   
-    <main>
-      <h2>
-        <Loading />
-      </h2>
-    </main>
-  )
-  }
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <main>
-      <h2>
-        <Tours tours={tours} />
-      </h2>
-    </main>
+    <>
+      <div style={BUTTON_WRAPPER_STYLES} onClick={()=>console.log("clicked")}>
+        <button onClick={()=>setIsOpen(true)}>Open Modal</button>
+
+        <Modal open={isOpen} onClose={()=>setIsOpen(false)}>
+          Fancy Modal
+        </Modal>
+      </div>
+
+      <div style={OTHER_CONTENT_STYLES}>Other Content</div>
+    </>
   )
 }
 

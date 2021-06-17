@@ -1,0 +1,40 @@
+
+.onGoingCallWindow-container {
+  width: 292px;
+  height: 106px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 15%;
+  margin-right: 5%;
+}
+
+
+.onGoingCallWindow-container .call-middle-box {
+  height: 70%;
+  padding-top: 1.25rem;
+  padding-left: 0.5rem;
+}
+.onGoingCallWindow-container .call-bottom-box  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.75%;
+}
+
+.arrow-img{
+  display: flex;
+  margin-bottom: 3px;
+  width: 19px;
+}
+
+.decline-phone-img {
+  display: flex;
+  margin-bottom: 3px;
+  width: 15px;
+  height: 5.6px;
+}
